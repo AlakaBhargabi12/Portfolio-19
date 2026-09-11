@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alaka Bhargabi Sahu | AI Engineer & Developer Portfolio</title>
+  
+  <!-- SEO & Metadata -->
+  <meta name="description" content="Official portfolio of Alaka Bhargabi Sahu — AI Engineering student at GIET University Gunupur & Hedera Certified Foundation (HCF) credential holder. Exploring neural systems, machine learning, and scalable web engineering.">
+  <meta name="keywords" content="Alaka Bhargabi Sahu, AI Engineer, Portfolio, GIET University Gunupur, Hedera Certified, Machine Learning, Deep Learning, Bhubaneswar, Web Developer">
+  <meta name="author" content="Alaka Bhargabi Sahu">
+  <meta name="theme-color" content="#07080d">
+
+  <!-- Open Graph & Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alaka Bhargabi Sahu | AI Engineer & Developer Portfolio">
+  <meta property="og:description" content="AI Engineering Student at GIET University Gunupur · Hedera Certified Foundation (HCF) · Building intelligent systems.">
+  <meta property="og:url" content="https://alakasahu.dev">
+  <meta property="og:site_name" content="Alaka Bhargabi Sahu Portfolio">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alaka Bhargabi Sahu | AI Engineer & Developer Portfolio">
+  <meta name="twitter:description" content="Explore AI projects, deep learning research, and Hedera DLT integrations by Alaka Bhargabi Sahu.">
+
+  <!-- JSON-LD Structured Data (Person Schema) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alaka Bhargabi Sahu",
+    "url": "https://alakasahu.dev",
+    "email": "alakabhargabisahu@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/alaka-bhargabi-sahu-691501385"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "GIET University Gunupur"
+    },
+    "jobTitle": "Artificial Intelligence Engineering Student",
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Hedera Hashgraph", "Python", "Web Engineering"]
+  }
+  </script>
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Application CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Floating Navigation Bar -->
+  <header class="header-nav-wrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" aria-label="Alaka Bhargabi Sahu Home">
+        <span class="brand-dot"></span>
+        <span>Alaka.AI</span>
+      </a>
+
+      <div class="nav-menu" role="menubar">
+        <a href="#about" class="nav-link" role="menuitem">About</a>
+        <a href="#skills" class="nav-link" role="menuitem">Skills</a>
+        <a href="#projects" class="nav-link" role="menuitem">Projects</a>
+        <a href="#certifications" class="nav-link" role="menuitem">Credentials</a>
+        <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="Profile.pdf" target="_blank" class="btn-nav-cta" aria-label="Download Profile & Resume">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation drawer" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-label="Mobile Navigation Menu">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#certifications" class="nav-link">Credentials</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <a href="Profile.pdf" target="_blank" class="btn btn-primary" style="margin-top: 8px;">View Resume</a>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <canvas id="neural-canvas"></canvas>
+
+      <div class="container hero-content">
+        <div class="hero-badge float-anim">
+          <span class="badge-pulse"></span>
+          <span>Available for AI Research & High-Impact Projects</span>
+        </div>
+
+        <h1 id="hero-heading" class="hero-title">
+          Architecting <span class="text-gradient">Intelligent Systems</span> & Scalable Engineering
+        </h1>
+
+        <p class="hero-subtitle">
+          Hello! I am <strong>Alaka Bhargabi Sahu</strong>, an Artificial Intelligence engineering student at 
+          <strong>GIET University Gunupur</strong> and <strong>Hedera Certified Foundation (HCF)</strong> credential holder. 
+          I engineer neural architectures, machine learning workflows, and responsive digital products.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Work</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-glass">
+            <span>Get in Touch</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+            <span>B.Tech AI (2025–2029) · GIET University</span>
+          </div>
+          <div class="stat-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            <span>Hedera Certified Foundation (HCF)</span>
+          </div>
+          <div class="stat-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Bhubaneswar, Odisha, India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">01 // ABOUT ME</span>
+          <h2 id="about-heading" class="section-title">Fusing Academic Rigor with Technical Execution</h2>
+          <p class="section-description">
+            Driven by curiosity at the intersection of machine intelligence, distributed ledgers, and seamless software interfaces.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative reveal-on-scroll">
+            <p>
+              I am pursuing my Bachelor of Technology in <strong>Artificial Intelligence</strong> at 
+              <strong>GIET University Gunupur</strong> (Class of 2025–2029). My focus spans mathematical modeling, 
+              computer vision, neural network optimization, and high-performance software engineering.
+            </p>
+            <p>
+              Beyond traditional machine learning, I am certified in <strong>Hedera Hashgraph (HCF)</strong>, exploring how 
+              distributed consensus networks and tamper-resistant audit trails can guarantee verifiable trust in 
+              AI pipelines and modern web applications.
+            </p>
+            <p>
+              I take pride in communicating complex ideas with clarity — combining rigorous engineering principles with compelling 
+              technical presentations to bridge innovation with real-world impact.
+            </p>
+          </div>
+
+          <div class="about-features reveal-on-scroll delay-1">
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 3.36 2.06 6.23 5 7.42V20a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.58c2.94-1.19 5-4.06 5-7.42a8 8 0 0 0-8-8z"/>
+                  <line x1="9.5" y1="9" x2="9.51" y2="9"/>
+                  <line x1="14.5" y1="9" x2="14.51" y2="9"/>
+                </svg>
+              </div>
+              <h3 class="feature-title">AI & Deep Learning</h3>
+              <p class="feature-desc">Building and tuning neural architectures for predictive accuracy and inference efficiency.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+              </div>
+              <h3 class="feature-title">Distributed Ledgers</h3>
+              <p class="feature-desc">Certified Hedera Foundation practitioner designing tamper-proof data workflows.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2 17 12 22 22 17"/>
+                  <polyline points="2 12 12 17 22 12"/>
+                </svg>
+              </div>
+              <h3 class="feature-title">Full-Stack Craft</h3>
+              <p class="feature-desc">Crafting responsive, ultra-fast, glassmorphic interfaces with zero dependency bloat.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+                </svg>
+              </div>
+              <h3 class="feature-title">Presentations</h3>
+              <p class="feature-desc">Skilled in technical communication, pitch delivery, and engineering leadership.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">02 // CAPABILITIES</span>
+          <h2 id="skills-heading" class="section-title">Technical Skill Matrix</h2>
+          <p class="section-description">
+            A balanced foundation of foundational engineering disciplines, advanced AI technologies, and emerging protocols.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: AI & Data Science -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 20V10"/>
+                  <path d="M12 20V4"/>
+                  <path d="M6 20v-6"/>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">AI & Data Science</h3>
+            </div>
+            <div class="skill-items-list">
+              <span class="skill-tag"><span class="skill-dot"></span>Python</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Machine Learning</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Neural Networks</span>
+              <span class="skill-tag"><span class="skill-dot"></span>TensorFlow / PyTorch</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Computer Vision</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Data Structures (DSA)</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Engineering -->
+          <div class="skill-category-card reveal-on-scroll delay-1">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Web Engineering</h3>
+            </div>
+            <div class="skill-items-list">
+              <span class="skill-tag"><span class="skill-dot"></span>HTML5 Semantic</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Modern CSS3 & Tokens</span>
+              <span class="skill-tag"><span class="skill-dot"></span>JavaScript (ES6+)</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Canvas API</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Responsive Layouts</span>
+              <span class="skill-tag"><span class="skill-dot"></span>RESTful APIs</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Distributed Ledgers & Hedera -->
+          <div class="skill-category-card reveal-on-scroll delay-2">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"/>
+                  <rect x="14" y="3" width="7" height="7"/>
+                  <rect x="14" y="14" width="7" height="7"/>
+                  <rect x="3" y="14" width="7" height="7"/>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Distributed Ledgers</h3>
+            </div>
+            <div class="skill-items-list">
+              <span class="skill-tag"><span class="skill-dot"></span>Hedera Hashgraph</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Consensus Service (HCS)</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Token Service (HTS)</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Smart Contracts</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Distributed Consensus</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Engineering Strengths -->
+          <div class="skill-category-card reveal-on-scroll delay-3">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <polyline points="16 11 18 13 22 9"/>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Core Strengths</h3>
+            </div>
+            <div class="skill-items-list">
+              <span class="skill-tag"><span class="skill-dot"></span>Technical Presentations</span>
+              <span class="skill-tag"><span class="skill-dot"></span>System Design Thinking</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Git & GitHub</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Problem Decomposition</span>
+              <span class="skill-tag"><span class="skill-dot"></span>Peer Collaboration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">03 // INNOVATION</span>
+          <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+          <p class="section-description">
+            Hands-on technical systems spanning computer vision, distributed hashgraph ledgers, and interactive simulation.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="projects-filter-bar reveal-on-scroll">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
+          <button class="filter-btn" data-filter="web3">Hedera / Web3</button>
+          <button class="filter-btn" data-filter="web">Web Engineering</button>
+        </div>
+
+        <!-- Dynamic Container -->
+        <div id="projects-container" class="projects-grid">
+          <!-- Dynamically populated by js/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section" aria-labelledby="certifications-heading">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">04 // CREDENTIALS</span>
+          <h2 id="certifications-heading" class="section-title">Academic Journey & Certifications</h2>
+          <p class="section-description">
+            Verifiable milestones demonstrating formal technical education and industry-grade achievements.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-track"></div>
+
+          <!-- Milestone 1: GIET University -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-institution">GIET University Gunupur</h3>
+                <span class="timeline-date">Sep 2025 — Sep 2029</span>
+              </div>
+              <div class="timeline-role">Bachelor of Technology (B.Tech) — Artificial Intelligence</div>
+              <p class="timeline-details">
+                Comprehensive four-year engineering program focusing on advanced algorithms, machine learning paradigms, 
+                linear algebra, discrete structures, and artificial neural networks. Active participant in technical symposiums 
+                and engineering workshops.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 2: Hedera Certified Foundation -->
+          <div class="timeline-item reveal-on-scroll delay-1">
+            <div class="timeline-node purple"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-institution">Hedera Hashgraph</h3>
+                <span class="timeline-date">Verified Credential</span>
+              </div>
+              <div class="timeline-role">Hedera Certified Foundation (HCF)</div>
+              <p class="timeline-details">
+                Validated foundational mastery of the Hedera network architecture, Hashgraph consensus algorithm (aBFT), 
+                smart contract execution, Hedera Consensus Service (HCS), and high-speed enterprise tokenization.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 3: Presentation & Engineering -->
+          <div class="timeline-item reveal-on-scroll delay-2">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-institution">Technical Presentations & Workshops</h3>
+                <span class="timeline-date">Ongoing</span>
+              </div>
+              <div class="timeline-role">Presenter & Technology Advocate</div>
+              <p class="timeline-details">
+                Conducted engineering presentations on emerging AI tools, neural architectures, and distributed systems. 
+                Dedicated to mentoring peers and communicating deep technical concepts with accessible intuition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">05 // CONNECT</span>
+          <h2 id="contact-heading" class="section-title">Let's Build Something Meaningful</h2>
+          <p class="section-description">
+            Open for AI engineering internships, research collaborations, hackathons, and innovative technical projects.
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Direct Information -->
+          <div class="contact-info-panel reveal-on-scroll">
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-detail-title">Direct Email</div>
+                <div class="contact-detail-val">alakabhargabisahu@gmail.com</div>
+              </div>
+              <button id="btn-copy-email" class="btn-copy-email" aria-label="Copy email address to clipboard">
+                Copy
+              </button>
+            </div>
+
+            <a href="https://www.linkedin.com/in/alaka-bhargabi-sahu-691501385" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Open Alaka's LinkedIn Profile">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-detail-title">LinkedIn Profile</div>
+                <div class="contact-detail-val">alaka-bhargabi-sahu</div>
+              </div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: auto; color: var(--text-muted);">
+                <line x1="7" y1="17" x2="17" y2="7"/>
+                <polyline points="7 7 17 7 17 17"/>
+              </svg>
+            </a>
+
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-detail-title">Based In</div>
+                <div class="contact-detail-val">Bhubaneswar, Odisha, India</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-card reveal-on-scroll delay-1">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Dr. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="alex@organization.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Project Details / Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Describe your project, opportunity, or research collaboration..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-submit-message">
+                <span>Transmit Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Toast Feedback -->
+  <div id="toast-feedback" class="toast-feedback" role="alert" aria-live="polite">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+      <polyline points="22 4 12 14.01 9 11.01"/>
+    </svg>
+    <span id="toast-text">Message received successfully.</span>
+  </div>
+
+  <!-- Back to Top FAB -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        © 2026 <strong>Alaka Bhargabi Sahu</strong> · B.Tech Artificial Intelligence, GIET University Gunupur.
+      </div>
+      <div class="footer-links">
+        <a href="#hero" class="footer-link">Top</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#certifications" class="footer-link">Credentials</a>
+        <a href="https://www.linkedin.com/in/alaka-bhargabi-sahu-691501385" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/canvas.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
